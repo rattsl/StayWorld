@@ -1,5 +1,37 @@
-@import 'mixin';
+@import 'modules/variables';
+@import 'modules/mixin';
+@import 'modules/hero-slider';
 
-$cWhite: white;
+//モバイルファースト
+@import "breakpoints/base";
 
-@import 'hero-slider';
+//スマホを横に傾けたときのランドスケープに適応
+@media (min-width: 480px) {
+  @import "breakpoints/480up";
+}
+
+//Ipad等タブレットに適応
+@media (min-width: 600px) {
+  @import "breakpoints/600up";
+}
+
+//タブレットのランドスケープに適応
+@media (min-width: 960px) {
+  @import "breakpoints/960up";
+}
+
+//通常PCのディスプレイに適応
+@media (min-width: 1280px) {
+  @import "breakpoints/1280up";
+}
+
+//レティーナディスプレイに適応
+@media (min-resolution: 192dpi)
+      ,(-webkit-min-device-pixel-ratio: 2) {
+  @import "breakpoints/2x";
+}
+
+//印刷時に適応
+@media print {
+  @import "breakpoints/print";
+}
