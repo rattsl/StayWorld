@@ -1,7 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  // direction: 'vertical',
-  loop: true,
-  effect: 'fade',
-  
+document.addEventListener('DOMContentLoaded', () => {
+  const hero = new HeroSlider('.swiper-container');
+  hero.start();
 })
