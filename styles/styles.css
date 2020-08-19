@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body {
-  margin: 0;
-}
-
 .swiper-container {
   overflow: visible !important;
 }
@@ -136,6 +132,10 @@ body {
 Stylesheet: ベーススタイル
 
 ******************************************************************/
+body {
+  font-family: 'Kameron', 'Noto Sans JP', sans-serif;
+}
+
 @media (min-width: 480px) {
   /******************************************************************
 

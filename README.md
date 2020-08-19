@@ -1,10 +1,12 @@
 # StayWorld
 
-**これは勉強用デモコーポレートサイトです**
+**デモコーポレートサイト**
 
 ## 実装
 - SassでのCSS設計
 - MediaQuery
+- ノーマライズ処理
+- Google Fonts(日本語：'Noto Sans JP',ローマ字: 'Kameron')
 - 
 
 
