@@ -4,6 +4,7 @@
 
 ## 実装
 - SassでのCSS設計
+- ディスプレイサイズ毎のレスポンシブ化(モバイルファースト)
 - MediaQuery
 - ノーマライズ処理
 - Google Fonts(日本語：'Noto Sans JP',ローマ字: 'Kameron')
