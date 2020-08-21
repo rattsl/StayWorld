@@ -9,6 +9,21 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   flex-wrap: wrap;
 }
 
+.travel{
+  &__inner{
+    padding: 50px;
+  }
+  &__img,
+  &__texts{
+    flex-basis: 47%;
+  }
+
+  &__texts{
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
 .houses{
   &__item{
     flex-basis: 50%;

@@ -840,7 +840,7 @@ img {
   font-size: 25x;
 }
 
-.mb-sm, .houses__title, .popular__title {
+.mb-sm, .travel__img, .travel__sub, .travel__texts, .houses__title, .popular__title {
   margin-bottom: 16px !important;
 }
 
@@ -856,7 +856,7 @@ img {
   padding-bottom: 80px !important;
 }
 
-.content-width, .houses, .popular__header, .popular__container {
+.content-width, .travel, .houses, .popular__header, .popular__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -871,7 +871,7 @@ img {
   color: #535353;
 }
 
-.flex, .houses__inner, .popular__container {
+.flex, .travel__inner, .houses__inner, .popular__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -879,6 +879,29 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.travel__inner {
+  background-color: #eaebe6;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+}
+
+.travel__img {
+  height: 300px;
+}
+
+.travel__img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.purple {
+  color: #904669;
 }
 
 .houses__button {
@@ -939,13 +962,28 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .houses__inner, .popular__container {
+  .flex, .travel__inner, .houses__inner, .popular__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .travel__inner {
+    padding: 50px;
+  }
+  .travel__img, .travel__texts {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+  .travel__texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .houses__item {
     -ms-flex-preferred-size: 50%;
@@ -987,6 +1025,12 @@ Stylesheet: 960px以上のモニタで適用（pc用）
   .pb-lg {
     padding-bottom: 150px !important;
   }
+  .travel__img {
+    height: 400px;
+  }
+  .travel__description {
+    margin-bottom: 40px;
+  }
   .popular__item {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
@@ -1002,6 +1046,9 @@ Stylesheet: 960px以上のモニタで適用（pc用）
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .travel__inner {
+    padding: 50px 150px;
+  }
   .popular__item {
     -ms-flex-preferred-size: 23%;
         flex-basis: 23%;

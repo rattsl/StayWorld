@@ -65,6 +65,40 @@ img {
   flex-direction: column;
 }
 
+.travel{
+  @extend .content-width;
+
+  &__inner{
+    @extend .flex;
+    background-color: $cBgGray;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  &__img{
+    height: 300px;
+    @extend .mb-sm;
+
+    & > img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__sub{
+    @extend .mb-sm;
+  }
+
+  &__texts{
+    @extend .mb-sm;
+  }
+}
+
+.purple{
+  color: $cWineRed;
+}
+
 .houses{
   @extend .content-width;
 
