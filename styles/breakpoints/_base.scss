@@ -73,16 +73,25 @@ img {
     background-color: $cBgGray;
     justify-content: space-between;
     padding: 15px;
+    position: relative;
+    z-index: 0;
   }
 
   &__img{
     height: 300px;
     @extend .mb-sm;
+    transition: box-shadow 1ms linear 0.8s;
 
     & > img{
       object-fit: cover;
       width: 100%;
       height: 100%;
+      position: relative;
+      z-index: -1;
+    }
+
+    &.inview{
+      box-shadow: inset 0 0 30px $cBlack;
     }
   }
 
