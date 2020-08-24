@@ -7,6 +7,11 @@ $cMenuOpen: $cBlack;
     top: 60px;
     width: 300px;
 
+    & > .logo{
+        padding: 0 40px;
+        font-size: 38px;
+    }
+
     &__btn {
         background-color: unset;
         border: none;
@@ -32,6 +37,7 @@ $cMenuOpen: $cBlack;
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: 200;
         background-color: rgba(0, 0, 0, 0.3);
         opacity: 0;
         visibility: hidden;
@@ -55,7 +61,10 @@ $cMenuOpen: $cBlack;
         display: block;
         margin-top: 30px;
         color: $cBlack;
-        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+            color: rgb(223, 201, 162);
+        }
     }
 }
 
