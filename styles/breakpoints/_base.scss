@@ -283,3 +283,29 @@ img {
 
 }
 
+.side{
+  display: none;
+  position: fixed;
+  top: 70%;
+  transform: translateY(-50px);
+  color: $cBlack;
+
+  &.left{
+    left: 50px;
+
+    & > .side__inner{
+      transform-origin: top left;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &.right{
+    right: 50px;
+
+    & > .side__inner{
+      transform-origin: top right;
+      transform: rotate(90deg);
+    }
+  }
+}
+
