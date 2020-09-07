@@ -10,6 +10,7 @@
 - Google Fonts(日本語：'Noto Sans JP',ローマ字: 'Kameron')
 - スクロール監視クラスの作成
 - ローダーの作成
+- Minify
 
 
 ## 使用ライブラリ
